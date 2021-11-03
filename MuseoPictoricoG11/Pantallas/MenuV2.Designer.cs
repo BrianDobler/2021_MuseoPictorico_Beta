@@ -33,6 +33,7 @@ namespace MuseoPictoricoG11.Pantallas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuV2));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -49,11 +50,10 @@ namespace MuseoPictoricoG11.Pantallas
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuV2));
             this.PanIzquierdo = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.subMenuRankingEntr = new System.Windows.Forms.Panel();
             this.btnConfiguraciones = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.subMenuRankingEntr = new System.Windows.Forms.Panel();
             this.bunifuButton11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -81,12 +81,12 @@ namespace MuseoPictoricoG11.Pantallas
             this.logoUser = new System.Windows.Forms.PictureBox();
             this.logoUserDark = new System.Windows.Forms.PictureBox();
             this.panelIzqAb = new System.Windows.Forms.Panel();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCapacidad = new System.Windows.Forms.TextBox();
             this.txtDisponibles = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblVersion = new System.Windows.Forms.Label();
             this.PanelSup = new System.Windows.Forms.Panel();
             this.btnDarkMode = new System.Windows.Forms.PictureBox();
             this.btnLightMode = new System.Windows.Forms.PictureBox();
@@ -102,6 +102,7 @@ namespace MuseoPictoricoG11.Pantallas
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.PanIzquierdo.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.subMenuRankingEntr.SuspendLayout();
             this.panel3.SuspendLayout();
             this.subMenuTipoEntrada.SuspendLayout();
@@ -148,28 +149,14 @@ namespace MuseoPictoricoG11.Pantallas
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.Controls.Add(this.btnConfiguraciones);
             this.AnimacionLogoBack.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionLogo.SetDecoration(this.panel4, BunifuAnimatorNS.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 590);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(272, 74);
+            this.panel4.Size = new System.Drawing.Size(272, 52);
             this.panel4.TabIndex = 20;
-            // 
-            // subMenuRankingEntr
-            // 
-            this.subMenuRankingEntr.BackColor = System.Drawing.Color.Transparent;
-            this.subMenuRankingEntr.Controls.Add(this.btnConfiguraciones);
-            this.subMenuRankingEntr.Controls.Add(this.bunifuButton11);
-            this.subMenuRankingEntr.Controls.Add(this.bunifuButton10);
-            this.subMenuRankingEntr.Controls.Add(this.bunifuButton9);
-            this.AnimacionLogoBack.SetDecoration(this.subMenuRankingEntr, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogo.SetDecoration(this.subMenuRankingEntr, BunifuAnimatorNS.DecorationType.None);
-            this.subMenuRankingEntr.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subMenuRankingEntr.Location = new System.Drawing.Point(0, 491);
-            this.subMenuRankingEntr.Name = "subMenuRankingEntr";
-            this.subMenuRankingEntr.Size = new System.Drawing.Size(272, 99);
-            this.subMenuRankingEntr.TabIndex = 9;
             // 
             // btnConfiguraciones
             // 
@@ -220,7 +207,7 @@ namespace MuseoPictoricoG11.Pantallas
             this.btnConfiguraciones.IdleIconLeftImage = null;
             this.btnConfiguraciones.IdleIconRightImage = null;
             this.btnConfiguraciones.IndicateFocus = false;
-            this.btnConfiguraciones.Location = new System.Drawing.Point(25, 39);
+            this.btnConfiguraciones.Location = new System.Drawing.Point(25, 1);
             this.btnConfiguraciones.Name = "btnConfiguraciones";
             this.btnConfiguraciones.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnConfiguraciones.OnDisabledState.BorderRadius = 45;
@@ -262,6 +249,20 @@ namespace MuseoPictoricoG11.Pantallas
             this.btnConfiguraciones.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnConfiguraciones.UseDefaultRadiusAndThickness = true;
             this.btnConfiguraciones.Click += new System.EventHandler(this.btnConfiguraciones_Click);
+            // 
+            // subMenuRankingEntr
+            // 
+            this.subMenuRankingEntr.BackColor = System.Drawing.Color.Transparent;
+            this.subMenuRankingEntr.Controls.Add(this.bunifuButton11);
+            this.subMenuRankingEntr.Controls.Add(this.bunifuButton10);
+            this.subMenuRankingEntr.Controls.Add(this.bunifuButton9);
+            this.AnimacionLogoBack.SetDecoration(this.subMenuRankingEntr, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogo.SetDecoration(this.subMenuRankingEntr, BunifuAnimatorNS.DecorationType.None);
+            this.subMenuRankingEntr.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subMenuRankingEntr.Location = new System.Drawing.Point(0, 491);
+            this.subMenuRankingEntr.Name = "subMenuRankingEntr";
+            this.subMenuRankingEntr.Size = new System.Drawing.Size(272, 99);
+            this.subMenuRankingEntr.TabIndex = 9;
             // 
             // bunifuButton11
             // 
@@ -1635,75 +1636,15 @@ namespace MuseoPictoricoG11.Pantallas
             // 
             // panelIzqAb
             // 
-            this.panelIzqAb.Controls.Add(this.groupBox1);
             this.panelIzqAb.Controls.Add(this.lblVersion);
+            this.panelIzqAb.Controls.Add(this.groupBox1);
             this.AnimacionLogoBack.SetDecoration(this.panelIzqAb, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionLogo.SetDecoration(this.panelIzqAb, BunifuAnimatorNS.DecorationType.None);
             this.panelIzqAb.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelIzqAb.Location = new System.Drawing.Point(0, 664);
+            this.panelIzqAb.Location = new System.Drawing.Point(0, 642);
             this.panelIzqAb.Name = "panelIzqAb";
             this.panelIzqAb.Size = new System.Drawing.Size(272, 169);
             this.panelIzqAb.TabIndex = 16;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtCapacidad);
-            this.groupBox1.Controls.Add(this.txtDisponibles);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.AnimacionLogoBack.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogo.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(4, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 103);
-            this.groupBox1.TabIndex = 16;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Entradas";
-            // 
-            // txtCapacidad
-            // 
-            this.AnimacionLogo.SetDecoration(this.txtCapacidad, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogoBack.SetDecoration(this.txtCapacidad, BunifuAnimatorNS.DecorationType.None);
-            this.txtCapacidad.Location = new System.Drawing.Point(123, 31);
-            this.txtCapacidad.Name = "txtCapacidad";
-            this.txtCapacidad.Size = new System.Drawing.Size(127, 26);
-            this.txtCapacidad.TabIndex = 3;
-            this.txtCapacidad.Text = "0";
-            this.txtCapacidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtDisponibles
-            // 
-            this.AnimacionLogo.SetDecoration(this.txtDisponibles, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogoBack.SetDecoration(this.txtDisponibles, BunifuAnimatorNS.DecorationType.None);
-            this.txtDisponibles.Location = new System.Drawing.Point(123, 63);
-            this.txtDisponibles.Name = "txtDisponibles";
-            this.txtDisponibles.Size = new System.Drawing.Size(127, 26);
-            this.txtDisponibles.TabIndex = 2;
-            this.txtDisponibles.Text = "0";
-            this.txtDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.AnimacionLogo.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogoBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Location = new System.Drawing.Point(8, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Capacidad:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.AnimacionLogo.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionLogoBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Location = new System.Drawing.Point(8, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Disponibles:";
             // 
             // lblVersion
             // 
@@ -1714,11 +1655,85 @@ namespace MuseoPictoricoG11.Pantallas
             this.lblVersion.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVersion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(64)))), ((int)(((byte)(48)))));
-            this.lblVersion.Location = new System.Drawing.Point(0, 0);
+            this.lblVersion.Location = new System.Drawing.Point(0, 103);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(51, 20);
             this.lblVersion.TabIndex = 15;
-            this.lblVersion.Text = "v6.4.8";
+            this.lblVersion.Text = "v8.4.8";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtCapacidad);
+            this.groupBox1.Controls.Add(this.txtDisponibles);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.AnimacionLogoBack.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogo.SetDecoration(this.groupBox1, BunifuAnimatorNS.DecorationType.None);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(272, 103);
+            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Contador de Entradas";
+            // 
+            // txtCapacidad
+            // 
+            this.txtCapacidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(123)))), ((int)(((byte)(45)))));
+            this.txtCapacidad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AnimacionLogo.SetDecoration(this.txtCapacidad, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogoBack.SetDecoration(this.txtCapacidad, BunifuAnimatorNS.DecorationType.None);
+            this.txtCapacidad.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCapacidad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
+            this.txtCapacidad.Location = new System.Drawing.Point(159, 36);
+            this.txtCapacidad.MaxLength = 1000;
+            this.txtCapacidad.Name = "txtCapacidad";
+            this.txtCapacidad.Size = new System.Drawing.Size(40, 20);
+            this.txtCapacidad.TabIndex = 3;
+            this.txtCapacidad.Text = "0";
+            this.txtCapacidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtDisponibles
+            // 
+            this.txtDisponibles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(123)))), ((int)(((byte)(45)))));
+            this.txtDisponibles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AnimacionLogo.SetDecoration(this.txtDisponibles, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogoBack.SetDecoration(this.txtDisponibles, BunifuAnimatorNS.DecorationType.None);
+            this.txtDisponibles.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisponibles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
+            this.txtDisponibles.Location = new System.Drawing.Point(160, 65);
+            this.txtDisponibles.MaxLength = 1000;
+            this.txtDisponibles.Name = "txtDisponibles";
+            this.txtDisponibles.Size = new System.Drawing.Size(39, 20);
+            this.txtDisponibles.TabIndex = 2;
+            this.txtDisponibles.Text = "0";
+            this.txtDisponibles.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.AnimacionLogo.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogoBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(48, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 19);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Capacidad:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.AnimacionLogo.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionLogoBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Disponibles:";
             // 
             // PanelSup
             // 
@@ -1955,6 +1970,7 @@ namespace MuseoPictoricoG11.Pantallas
             this.Load += new System.EventHandler(this.MenuV2_Load);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MenuV2_MouseMove);
             this.PanIzquierdo.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.subMenuRankingEntr.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.subMenuTipoEntrada.ResumeLayout(false);

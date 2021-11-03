@@ -174,11 +174,11 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(64)))), ((int)(((byte)(48)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
-            this.label1.Location = new System.Drawing.Point(501, 267);
+            this.label1.Location = new System.Drawing.Point(488, 267);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 77);
+            this.label1.Size = new System.Drawing.Size(105, 77);
             this.label1.TabIndex = 51;
-            this.label1.Text = "9";
+            this.label1.Text = "24";
             // 
             // label2
             // 
@@ -186,7 +186,7 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(64)))), ((int)(((byte)(48)))));
             this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
-            this.label2.Location = new System.Drawing.Point(558, 252);
+            this.label2.Location = new System.Drawing.Point(567, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 39);
             this.label2.TabIndex = 52;
@@ -237,11 +237,11 @@
             // 
             this.labFecha.AutoSize = true;
             this.labFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(64)))), ((int)(((byte)(48)))));
-            this.labFecha.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labFecha.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(194)))), ((int)(((byte)(146)))));
-            this.labFecha.Location = new System.Drawing.Point(422, 475);
+            this.labFecha.Location = new System.Drawing.Point(398, 480);
             this.labFecha.Name = "labFecha";
-            this.labFecha.Size = new System.Drawing.Size(91, 30);
+            this.labFecha.Size = new System.Drawing.Size(77, 24);
             this.labFecha.TabIndex = 60;
             this.labFecha.Text = "FECHA";
             // 
@@ -358,7 +358,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(64)))), ((int)(((byte)(48)))));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Image = global::MuseoPictoricoG11.Properties.Resources.Night1;
+            this.pictureBox5.Image = global::MuseoPictoricoG11.Properties.Resources.Sol;
             this.pictureBox5.Location = new System.Drawing.Point(386, 257);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(109, 87);

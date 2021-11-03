@@ -148,6 +148,7 @@ namespace MuseoPictoricoG11.Controladores
             int entradasDisponibles = actual.CantMaximaVisitantes - (cantidadEntradasTotales + cantidadReservasTotales);
             if (!actual.validarCapacidadMaxima(cantidadTotal))
             {
+
                 MessageBox.Show("La cantidad de entradas ingresadas, supera a la capacidad de entradas disponibles para esta Sede. \n\n Entradas disponibles: " + entradasDisponibles.ToString(), "Alerta!");
             }
             else
@@ -208,7 +209,7 @@ namespace MuseoPictoricoG11.Controladores
 
         public void imprimirEntrada()
         {
-
+            new ImpresorEntradas().ShowDialog();
         }
 
         public void setMonto(double monto)

@@ -66,6 +66,8 @@
             this.lblSede = new System.Windows.Forms.Label();
             this.dtgTarifas = new System.Windows.Forms.DataGridView();
             this.tarifaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelDetalleEntrada.SuspendLayout();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTarifas)).BeginInit();
@@ -577,6 +579,16 @@
             // 
             this.tarifaBindingSource.DataSource = typeof(MuseoPictoricoG11.Modelos.Tarifa);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 10;
+            this.bunifuElipse1.TargetControl = this.panelDetalleEntrada;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 5;
+            this.bunifuElipse2.TargetControl = this;
+            // 
             // PantallaVentaEntradas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -646,5 +658,7 @@
         private System.Windows.Forms.DataGridView dtgTarifas;
         private System.Windows.Forms.DataGridViewTextBoxColumn mTipoVisitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource tarifaBindingSource;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }

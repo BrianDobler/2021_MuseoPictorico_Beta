@@ -153,6 +153,16 @@ namespace MuseoPictoricoG11.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FlyerDeCargaV3 {
+            get {
+                object obj = ResourceManager.GetObject("FlyerDeCargaV3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gob {
             get {
                 object obj = ResourceManager.GetObject("gob", resourceCulture);

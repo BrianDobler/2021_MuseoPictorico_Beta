@@ -59,8 +59,7 @@ namespace MuseoPictoricoG11.Pantallas
             txtCantidadDeEntradas.Enabled = true;
             panelDetalleEntrada.Enabled = false;
             panelDetalleEntrada.Visible = false;
-
-            MessageBox.Show("Imprimiendo " + cantidadEntradas.ToString() + " entradas", "Informacion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Imprimiendo " + cantidadEntradas.ToString() + " entradas", "Informacion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             controlador.registrarVenta(getTarifaSeleccionada());
         }
 
