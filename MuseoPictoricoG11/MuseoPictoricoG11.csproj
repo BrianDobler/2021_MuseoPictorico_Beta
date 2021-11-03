@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F31805DB-377A-4792-93D0-4AB124340894}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MuseoPictoricoG11</RootNamespace>
+    <AssemblyName>MuseoPictoricoG11</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MuseoPictoricoG11.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuColorTransition">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuColorTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuFormDock">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuFormDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGauge">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuGauge.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGroupBox">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuGroupBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuImageButton">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuImageButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRating">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuRating.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuScrollBar">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuScrollBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShadowPanel">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuShapes">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuShapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSnackbar">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSnackbar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuUserControl">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuUserControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.Deprecated">
+      <HintPath>..\packages\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.Deprecated.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NHibernate, Version=5.3.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.3.8\lib\net461\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CapaPersistencia\DetalleExposicionMap.cs" />
+    <Compile Include="CapaPersistencia\EmpleadoMap.cs" />
+    <Compile Include="CapaPersistencia\EntradaMap.cs" />
+    <Compile Include="CapaPersistencia\ExposicionMap.cs" />
+    <Compile Include="CapaPersistencia\FachadaPersistencia.cs" />
+    <Compile Include="CapaPersistencia\ObraMap.cs" />
+    <Compile Include="CapaPersistencia\ReservaVisitaMap.cs" />
+    <Compile Include="CapaPersistencia\SedeMap.cs" />
+    <Compile Include="CapaPersistencia\SesionMap.cs" />
+    <Compile Include="CapaPersistencia\TarifaMap.cs" />
+    <Compile Include="CapaPersistencia\TipoDeEntradaMap.cs" />
+    <Compile Include="CapaPersistencia\TipoVisitaMap.cs" />
+    <Compile Include="CapaPersistencia\UsuarioMap.cs" />
+    <Compile Include="Controladores\ControlConsultaEntradas.cs" />
+    <Compile Include="Controladores\ControlVentaEntradas.cs" />
+    <Compile Include="LogicaDeNegocio\IObservadorOcupacionSede.cs" />
+    <Compile Include="LogicaDeNegocio\ISujetoOcupacionSede.cs" />
+    <Compile Include="LogicaDeNegocio\TarifaServicio .cs" />
+    <Compile Include="LogicaDeNegocio\ReservaVisitaServicio.cs" />
+    <Compile Include="LogicaDeNegocio\EntradaServicio.cs" />
+    <Compile Include="LogicaDeNegocio\SesionServicio.cs" />
+    <Compile Include="LogicaDeNegocio\UsuarioServicio.cs" />
+    <Compile Include="Modelos\DetalleExposicion.cs" />
+    <Compile Include="Modelos\Empleado.cs" />
+    <Compile Include="Modelos\Entidad.cs" />
+    <Compile Include="Modelos\Entrada.cs" />
+    <Compile Include="Modelos\Exposicion.cs" />
+    <Compile Include="Modelos\Obra.cs" />
+    <Compile Include="Modelos\Perfil.cs" />
+    <Compile Include="Modelos\ReservaVisita.cs" />
+    <Compile Include="Modelos\Sede.cs" />
+    <Compile Include="Modelos\Sesion.cs" />
+    <Compile Include="Modelos\Tarifa.cs" />
+    <Compile Include="Modelos\TipoDeEntrada.cs" />
+    <Compile Include="Modelos\TipoVisita.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
+    <Compile Include="Pantallas\CargaProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\CargaProgram.Designer.cs">
+      <DependentUpon>CargaProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\MenuV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MenuV2.Designer.cs">
+      <DependentUpon>MenuV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Multiform1.cs" />
+    <Compile Include="Pantallas\PantallaConsultaEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaConsultaEntradas.Designer.cs">
+      <DependentUpon>PantallaConsultaEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaEntrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaEntrada.Designer.cs">
+      <DependentUpon>PantallaEntrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaPrincipal.Designer.cs">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaSala.Designer.cs">
+      <DependentUpon>PantallaSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\PantallaVentaEntradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\PantallaVentaEntradas.Designer.cs">
+      <DependentUpon>PantallaVentaEntradas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorio\TarifaRepositorio.cs" />
+    <Compile Include="Repositorio\ReservaVisita.cs" />
+    <Compile Include="Repositorio\EntradaRepositorio.cs" />
+    <Compile Include="Repositorio\NhRepositorio.cs" />
+    <Compile Include="Repositorio\SesionRepositorio.cs" />
+    <Compile Include="Repositorio\SedeRepositorio.cs" />
+    <Compile Include="Repositorio\UsuarioRepositorio.cs" />
+    <Compile Include="Utils\Hours.cs" />
+    <EmbeddedResource Include="Pantallas\CargaProgram.resx">
+      <DependentUpon>CargaProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\MenuV2.resx">
+      <DependentUpon>MenuV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaConsultaEntradas.resx">
+      <DependentUpon>PantallaConsultaEntradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaEntrada.resx">
+      <DependentUpon>PantallaEntrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaPrincipal.resx">
+      <DependentUpon>PantallaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaSala.resx">
+      <DependentUpon>PantallaSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\PantallaVentaEntradas.resx">
+      <DependentUpon>PantallaVentaEntradas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\MuseoPictoricoG11.Modelos.Entrada.datasource" />
+    <None Include="Properties\DataSources\MuseoPictoricoG11.Modelos.Tarifa.datasource">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Recursos\Refrescar.pxr" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recursos\AYUDA3.png" />
+    <None Include="Recursos\btnUserfinal2.png" />
+    <None Include="Recursos\btnUserfinal4.png" />
+    <None Include="Recursos\btnUserOsucro.png" />
+    <Content Include="Recursos\cancel.png" />
+    <Content Include="Recursos\cancelar.png" />
+    <Content Include="Recursos\candado.png" />
+    <Content Include="Recursos\candado1.png" />
+    <Content Include="Recursos\candado2.png" />
+    <None Include="Recursos\DarkMode.png" />
+    <None Include="Recursos\DarkMode1.png" />
+    <None Include="Recursos\DarkMode2.png" />
+    <None Include="Recursos\DarkMode3.png" />
+    <Content Include="Recursos\development.png" />
+    <Content Include="Recursos\editar.png" />
+    <Content Include="Recursos\eliminar.png" />
+    <None Include="Recursos\error.png" />
+    <Content Include="Recursos\FlyerDeCarga.png" />
+    <Content Include="Recursos\FlyerDeCargaV2.png" />
+    <Content Include="Recursos\FlyerDeCargaV3.png" />
+    <Content Include="Recursos\FlyerDeCargaVF.png" />
+    <None Include="Recursos\gob.png" />
+    <None Include="Recursos\gob1.png" />
+    <Content Include="Recursos\guardar.png" />
+    <Content Include="Recursos\Icono cerraR.png" />
+    <None Include="Recursos\Icono cerraRcrema.png" />
+    <None Include="Recursos\Icono cerraRcrema1.png" />
+    <None Include="Recursos\Icono cerraRcrema2.png" />
+    <Content Include="Recursos\Icono Maximizar.png" />
+    <Content Include="Recursos\Icono Minimizar.png" />
+    <Content Include="Recursos\Icono Restaurar.png" />
+    <Content Include="Recursos\ICONODEF.ico" />
+    <Content Include="Recursos\investment.png" />
+    <Content Include="Recursos\layout.png" />
+    <Content Include="Recursos\LIBROS2.png" />
+    <None Include="Recursos\LightMode.png" />
+    <None Include="Recursos\LogoMuseoClaro2.png" />
+    <None Include="Recursos\LogoMuseoClaro.png" />
+    <Content Include="Recursos\LogoMuseoNegro.png" />
+    <Content Include="Recursos\logo_utn.ico" />
+    <Content Include="Recursos\magento-100.png" />
+    <None Include="Recursos\maps.png" />
+    <Content Include="Recursos\maximize.png" />
+    <Content Include="Recursos\menu.png" />
+    <Content Include="Recursos\minimize.png" />
+    <Content Include="Recursos\Mobile-Menu-Icon.png" />
+    <None Include="Recursos\Museo.png" />
+    <None Include="Recursos\Museo1.png" />
+    <None Include="Recursos\Night.png" />
+    <None Include="Recursos\Night1.png" />
+    <Content Include="Recursos\nuevo.png" />
+    <None Include="Recursos\OjoCrema.png" />
+    <Content Include="Recursos\OjoMarron.png" />
+    <Content Include="Recursos\OjoMarronTachado.png" />
+    <Content Include="Recursos\OjoPass.png" />
+    <Content Include="Recursos\perfil-.png" />
+    <Content Include="Recursos\perfil.png" />
+    <None Include="Recursos\Pestaña.png" />
+    <None Include="Recursos\Pestaña1.png" />
+    <Content Include="Recursos\Refrescar.png" />
+    <Content Include="Recursos\Refrescar1.png" />
+    <Content Include="Recursos\Refrescar2.png" />
+    <Content Include="Recursos\reportes titulo.png" />
+    <Content Include="Recursos\REPORTES2.png" />
+    <Content Include="Recursos\restaure.png" />
+    <Content Include="Recursos\search-50.png" />
+    <Content Include="Recursos\settings-50.png" />
+    <Content Include="Recursos\social-care.png" />
+    <None Include="Resources\MEC_Museo_Provincial_de_Bellas_Artes_Emilio_Caraffa.jpg" />
+    <None Include="Recursos\Sol.png" />
+    <Content Include="Recursos\Sueldo.png" />
+    <None Include="Recursos\TILDE.png" />
+    <None Include="Recursos\TILDE1.png" />
+    <None Include="Recursos\TILDE2.png" />
+    <Content Include="Recursos\user.png" />
+    <Content Include="Recursos\user1.png" />
+    <Content Include="Recursos\Usuario.png" />
+    <Content Include="Recursos\utn png blanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
